@@ -1,4 +1,4 @@
-//https://mouven.blogspot.com/2023/08/system-verilog-hello-world.html
+//https://mouven.blogspot.com/2023/08/wierd-algorithm-in-system-verilog.html
 
 class solution;
 
