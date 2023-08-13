@@ -66,4 +66,4 @@ class test;
   );
     s = "hello world";
   endfunction: ref_model
-endclass 
+endclass: test 
