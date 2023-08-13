@@ -61,7 +61,7 @@ class test;
 
 
 
-  function void test::ref_model(
+  function void ref_model(
     output string s
   );
     s = "hello world";
