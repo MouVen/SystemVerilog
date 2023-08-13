@@ -29,7 +29,8 @@ class test;
     end else begin
       $display("SUCCESS");
     end
-endfunction
+  endfunction: run
+
 
   function bit compare(
     input int act[$],
