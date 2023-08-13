@@ -2,8 +2,8 @@
 
 class solution;
 
-    function void your_solution(output string s);
-    //Type your Solution Here
+    function void your_solution(input int n, output int q[$]);
+      //Type your Solution Here
     endfunction: your_solution
 
 endclass: solution
