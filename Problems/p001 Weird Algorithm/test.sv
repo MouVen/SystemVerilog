@@ -1,11 +1,12 @@
 class test;
   solution sol; 
+  typedef bit [63:0] T;
   
   function void run();
-    int act[$];
-    int exp[$];
+    T act[$];
+    T exp[$];
     bit fail; 
-    int n;  
+    T n;  
     
     sol = new();
     for(int i = 0; i < 100; i += 1) begin
@@ -33,8 +34,8 @@ class test;
 
 
   function bit compare(
-    input int act[$],
-    input int exp[$]
+    ref T act[$],
+    ref T exp[$]
   );
     if(act.size() != exp.size()) return 1;
     
@@ -141,8 +142,8 @@ class test;
  
   
   function void ref_model(
-    input int n,
-    output int q[$]
+    input T n,
+    ref T q[$]
   );
     while(n > 1) begin
       q.push_back(n);

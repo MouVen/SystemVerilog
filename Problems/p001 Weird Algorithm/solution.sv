@@ -2,7 +2,7 @@
 
 class solution;
 
-    function void your_solution(input int n, output int q[$]);
+    function void your_solution(input bit [63:0] n, ref bit [63:0] q[$]);
       //Type your Solution Here
     endfunction: your_solution
 
