@@ -144,16 +144,17 @@ class test;
     input int n,
     output int q[$]
   );
-    
-    while(n!=1) begin
+    while(n > 1) begin
       q.push_back(n);
-      if(n%2==0) begin
-        n = n/2;
+      if(n&1) begin
+        //odd
+        n = n * 3 + 1;
       end else begin
-        n = n*3 + 1;
+        //even
+        n = n >> 1;
       end
     end
-    q.push_back(n);
+    q.push_back(1);
     
   endfunction: ref_model
   
